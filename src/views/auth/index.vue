@@ -1,3 +1,3 @@
 <template>
-  <div>This is auth page</div>
+  <div class="view-auth">This is auth page</div>
 </template>

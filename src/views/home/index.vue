@@ -1,5 +1,5 @@
 <template>
-  <div class="home-view">
+  <div class="view-home">
     <v-header></v-header>
     <v-sidebar></v-sidebar>
     <v-body>
@@ -7,7 +7,6 @@
     </v-body>
     <v-footer></v-footer>
 
-    <router-link to="/auth">auth</router-link>
   </div>
 </template>
 

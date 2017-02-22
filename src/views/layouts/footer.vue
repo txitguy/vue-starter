@@ -1,3 +1,3 @@
 <template>
-  <div>This is footer</div>
+  <div class="layout-footer">This is footer</div>
 </template>
