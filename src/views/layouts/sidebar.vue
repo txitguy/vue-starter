@@ -26,6 +26,6 @@
     width: 170px;
     height: 100%;
     position: absolute;
-    background-color: #0499AF;
+    background-color: rgb(54, 70, 93);
   }
 </style>

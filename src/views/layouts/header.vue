@@ -27,7 +27,5 @@
 
 <style>
   .layout-header .el-menu--dark{
-    color: white;
-    background-color: #1EC4DE;
   }
 </style>
