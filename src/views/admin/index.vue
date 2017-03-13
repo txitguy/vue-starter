@@ -11,15 +11,15 @@
 </template>
 
 <script>
-  import { mapActions } from 'vuex'
+  // import { mapActions } from 'vuex'
   export default {
     methods: {
-      ...mapActions([
-        'loadAdminRoles'
-      ])
+      // ...mapActions([
+      //   'loadAdminRoles'
+      // ])
     },
     mounted () {
-      this.loadAdminRoles()
+      // this.loadAdminRoles()
     }
   }
 </script>

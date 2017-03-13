@@ -1,4 +1,3 @@
-import adminRole from 'services/adminRole'
 import * as types from '../mutation-types'
 
 const state = {
@@ -11,11 +10,6 @@ const getters = {
 
 const actions = {
   loadAdminRoles ({commit}) {
-    adminRole.list().then(data => {
-      if (data.code === 200 && data.list) {
-        commit(types.LOAD_ADMIN_ROLES, data.list)
-      }
-    })
   }
 }
 

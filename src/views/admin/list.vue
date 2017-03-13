@@ -55,7 +55,7 @@
 </template>
 
 <script>
-  import adminUser from 'services/adminUser'
+  // import adminUser from 'services/adminUser'
   import util from 'utils/util'
   export default {
     data () {
@@ -75,12 +75,12 @@
     methods: {
       refresh () {
         this.tableLoading = true
-        return adminUser.query(this.pageOptions).then(data => {
-          this.adminUsers = data.list
-          Object.assign(this.pageOptions, data.meta)
-          this.tableLoading = false
-          return data
-        })
+        // return adminUser.query(this.pageOptions).then(data => {
+        //   this.adminUsers = data.list
+        //   Object.assign(this.pageOptions, data.meta)
+        //   this.tableLoading = false
+        //   return data
+        // })
       },
       reset () {
         util.emptyPageOptions(this.pageOptions)
@@ -100,16 +100,16 @@
         this.refresh()
       },
       handleDelete () {
-        let params = {
-          gids: [this.selectedRow.gid]
-        }
-        return adminUser.destroy(params).then(data => {
-          if (data.code === 200) {
-            this.$notify.success('成功')
-            this.dialogVisible = false
-            this.refresh()
-          }
-        })
+        // let params = {
+        //   gids: [this.selectedRow.gid]
+        // }
+        // return adminUser.destroy(params).then(data => {
+        //   if (data.code === 200) {
+        //     this.$notify.success('成功')
+        //     this.dialogVisible = false
+        //     this.refresh()
+        //   }
+        // })
       }
     },
     mounted () {

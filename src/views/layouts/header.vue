@@ -1,31 +1,72 @@
 <template>
   <div class="layout-header">
-    <el-menu theme="dark" default-active="1" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-      <!--<el-menu-item index="1">处理中心</el-menu-item>
-      <el-submenu index="2">
-        <template slot="title">我的工作台</template>
-        <el-menu-item index="2-1">选项1</el-menu-item>
-        <el-menu-item index="2-2">选项2</el-menu-item>
-        <el-menu-item index="2-3">选项3</el-menu-item>
-      </el-submenu>-->
-      <el-menu-item index="3"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
+    <el-row type="flex" justify="space-between">
+      <el-col :span="6"></el-col>
+      <el-col :span="6">
+        <h3 class="big-title"><router-link to="/">后台管理系统</router-link></h3>
+      </el-col>
+      <el-col :span="6" class="text-right">
+        <el-dropdown trigger="click" @command="handleCommand">
+          <span class="el-dropdown-link">
+            {{ loggedUser.bUserName }} <i class="caret"></i>
+          </span>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item command="profile">修改资料</el-dropdown-item>
+            <el-dropdown-item command="logout">退出</el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
+      </el-col>
+    </el-row>    
 
-      <h3>商户后台管理平台</h3>
-    </el-menu>
   </div>
 </template>
 
 <script>
+  import _ from 'lodash'
+  import session from 'services/session'
   export default {
-    methods: {
-      handleSelect () {
-
+    data () {
+      return {
+        loggedUser: {}
       }
+    },
+    methods: {
+      handleCommand (command) {
+        console.log(command)
+        this[`handle${_.upperFirst(command)}`]()
+      },
+      handleProfile () {
+        console.log('profile')
+      },
+      handleLogout () {
+        console.log('logout')
+      }
+    },
+    mounted () {
+      this.loggedUser = session.get()
+      console.log(this.loggedUser)
     }
   }
 </script>
 
-<style>
-  .layout-header .el-menu--dark{
+<style scoped>
+  .layout-header {
+    padding: 0 10px;
+    color: #eee;
+    line-height: 60px;
+    background-color: #1F2D3D;
+  }
+  .layout-header a{
+    color: #eee;
+    text-decoration: none;
+  }
+  .layout-header .big-title{
+    text-align: center;
+  }
+  .el-dropdown{
+    cursor: pointer;
+  }
+  .el-dropdown-link{
+    color: #eee;
   }
 </style>

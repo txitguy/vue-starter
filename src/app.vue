@@ -5,25 +5,56 @@
 </template>
 
 <script>
-  import shell from 'views/layouts/shell'
   export default {
     name: 'app',
     components: {
-      shell
     }
   }
 </script>
 
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
   #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: Microsoft YaHei, SimSun, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     color: #2c3e50;
+
     width: 100%;
-    height: 100%;
     position: absolute;
-    overflow: hidden;
+    top: 0;
+    bottom: 0;
+  }
+  .el-row {
+    margin-bottom: 10px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+  .btn-block {
+    width: 100%;
+  }
+  .bread_crumb{
+    margin:15px 5px;
   }
 </style>

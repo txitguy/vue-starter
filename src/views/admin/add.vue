@@ -21,13 +21,13 @@
     methods: {
       handleSubmit () {
         this.btnLoading = true
-        adminUser.create(this.form).then(data => {
-          if (data.code === 200) {
-            this.$notify.success('成功')
-            this.$router.push({name: 'adminUser.list'})
-          }
-          this.btnLoading = false
-        })
+        // adminUser.create(this.form).then(data => {
+        //   if (data.code === 200) {
+        //     this.$notify.success('成功')
+        //     this.$router.push({name: 'adminUser.list'})
+        //   }
+        //   this.btnLoading = false
+        // })
       }
     }
   }

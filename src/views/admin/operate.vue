@@ -40,7 +40,6 @@
 
 <script>
   import _ from 'lodash'
-  import { mapGetters } from 'vuex'
   export default {
     props: {
       type: String,
@@ -54,9 +53,6 @@
       }
     },
     computed: {
-      ...mapGetters([
-        'adminRoles'
-      ]),
       isAdd () {
         return this.type === 'add'
       }
