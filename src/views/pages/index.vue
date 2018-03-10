@@ -1,18 +1,14 @@
 <template lang="pug">
-  #layout-header
-    h1 Header
+  #page-index
+    h1 Hello World
 </template>
-
-<style scoped>
-
-</style>
 
 <script lang="ts">
 import Vue from 'vue'
 import Component from 'vue-class-component'
 
 @Component({})
-export default class Header extends Vue {
+export default class Index extends Vue {
 
 }
 </script>

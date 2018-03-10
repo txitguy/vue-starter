@@ -1,3 +1,4 @@
-<template>
-  <div class="layout-footer">This is footer</div>
+<template lang="pug">
+  #layout-footer
+    h1 This is the footer
 </template>

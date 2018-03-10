@@ -1,10 +1,9 @@
-<template>
-  <div class="layout-body">
-    <router-view></router-view>
-  </div>
+<template lang="pug">
+  #layout-body
+    router-view
 </template>
 
-<style>
+<style lang="scss">
   .layout-body{
     padding: 0 20px;
     
