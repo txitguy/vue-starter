@@ -1,5 +1,7 @@
-<template>
-  <p class="page-container">404 <br>Page Not Found</p>
+<template lang="pug">
+  p.page-container 404
+    br
+    | Page Not Found
 </template>
 
 <style scoped>

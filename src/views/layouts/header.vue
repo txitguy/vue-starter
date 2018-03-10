@@ -3,7 +3,7 @@
     <el-row type="flex" justify="space-between">
       <el-col :span="6"></el-col>
       <el-col :span="6">
-        <h3 class="big-title"><router-link to="/">后台管理系统</router-link></h3>
+        <h3 class="big-title"><router-link to="/">Link A</router-link></h3>
       </el-col>
       <el-col :span="6" class="text-right">
         <el-dropdown trigger="click" @command="handleCommand">
@@ -11,8 +11,8 @@
             {{ loggedUser.bUserName }} <i class="caret"></i>
           </span>
           <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item command="profile">修改资料</el-dropdown-item>
-            <el-dropdown-item command="logout">退出</el-dropdown-item>
+            <el-dropdown-item command="profile">Profile</el-dropdown-item>
+            <el-dropdown-item command="logout">Logout</el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
       </el-col>

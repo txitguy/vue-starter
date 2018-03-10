@@ -2,7 +2,7 @@
   <div class="view-adminUser-list">
     <el-row type="flex" justify="space-between">
       <el-col :span="6">
-        <el-input v-model="pageOptions.keyword" placeholder="用户名/姓名/手机号"></el-input>
+        <el-input v-model="pageOptions.keyword" placeholder="Search..."></el-input>
       </el-col>
       <el-col>
         <el-button-group>
@@ -21,12 +21,12 @@
       <el-col :span="24">
         <el-table v-loading="tableLoading" :data="adminUsers" stripe highlight-current-row @current-change="handleCurrentChange">
           <el-table-column type="index" width="60"></el-table-column>
-          <el-table-column prop="name" label="用户名"></el-table-column>
-          <el-table-column prop="realName" label="姓名"></el-table-column>
-          <el-table-column prop="roleNames" label="角色"></el-table-column>
-          <el-table-column prop="phone" label="手机号"></el-table-column>
-          <el-table-column prop="createTime" label="创建时间"></el-table-column>
-          <el-table-column prop="updateTime" label="修改时间"></el-table-column>
+          <el-table-column prop="name" label="Username"></el-table-column>
+          <el-table-column prop="realName" label="Real Name"></el-table-column>
+          <el-table-column prop="roleNames" label="Role Names"></el-table-column>
+          <el-table-column prop="phone" label="Phone"></el-table-column>
+          <el-table-column prop="createTime" label="Created"></el-table-column>
+          <el-table-column prop="updateTime" label="Updated"></el-table-column>
         </el-table>
       </el-col>
     </el-row>
@@ -43,11 +43,11 @@
       </el-col>
     </el-row>
 
-    <el-dialog title="提示" v-model="dialogVisible" size="tiny">
-      <span>确认删除用户 {{ selectedRow ? selectedRow.name : ''}} 吗？</span>
+    <el-dialog title="Title" v-model="dialogVisible" size="tiny">
+      <span>Something {{ selectedRow ? selectedRow.name : ''}} Name</span>
       <span slot="footer" class="dialog-footer">
-        <el-button @click="dialogVisible = false">取 消</el-button>
-        <el-button type="primary" @click="handleDelete">确 定</el-button>
+        <el-button @click="dialogVisible = false">Hide</el-button>
+        <el-button type="primary" @click="handleDelete">Delete</el-button>
       </span>
     </el-dialog>
 

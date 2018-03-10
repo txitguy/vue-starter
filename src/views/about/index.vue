@@ -1,7 +1,7 @@
-<template>
-  <div class="view-about">
-    <h1 class="welcome-info">欢迎使用后台管理系统</h1>
-  </div>
+<template lang="pug">
+  .view-about
+    h1.welcome-info Welcome to About page
+    p Test
 </template>
 
 <script>
@@ -13,12 +13,12 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   .view-about {
     margin-top: 20px;
     text-align: center;
-  }
-  .version-info{
-    font-weight: bold;
+    p{
+      font-weight: normal;
+    }
   }
 </style>

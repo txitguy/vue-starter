@@ -2,10 +2,10 @@
   <div class="v-sidebar">
     <el-menu default-active="2" class="el-menu-vertical-demo" theme="dark" router unique-opened>
       <el-submenu index="1">
-        <template slot="title">管理</template>
+        <template slot="title">Website Title</template>
         <el-menu-item-group>
-          <el-menu-item index="/about">关于</el-menu-item>
-          <el-menu-item index="/admin">管理员</el-menu-item>
+          <el-menu-item index="/about">About</el-menu-item>
+          <el-menu-item index="/admin">Admin</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
     </el-menu>
