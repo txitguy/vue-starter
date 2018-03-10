@@ -1,12 +1,9 @@
-<template>
-  <div class="view-home">
-    <v-header></v-header>
-    <div class="layout-main">
-      <v-body>
-        
-      </v-body>
-    </div>
-  </div>
+<template lang="pug">
+  #site-container
+    v-header
+    .layout-main
+      vbody
+    v-footer
 </template>
 
 <style lang="scss" scoped>
@@ -19,11 +16,13 @@ import Component from 'vue-class-component'
 
 import vHeader from 'views/layouts/header.vue'
 import vBody from 'views/layouts/body.vue'
+import vFooter from 'views/layouts/footer.vue'
 
 @Component({
   components: {
     vHeader,
-    vBody
+    vBody,
+    vFooter
   }
 })
 export default class Home extends Vue {
