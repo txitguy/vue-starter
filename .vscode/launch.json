@@ -5,14 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Debug App",
+            "webRoot": "${workspaceFolder}/src",
+            "url": "http://localhost:8080",
+            "sourceMaps": true,
+            "trace": true
+        },
+        {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${file}",
-            "preLaunchTask": "tsc: build - tsconfig.json",
-            "outFiles": [
-                "${workspaceFolder}/built/**/*.js"
-            ]
+            "name": "Debug Build",
+            "program": "${workspaceFolder}/build/dev-server.js"
         }
     ]
 }

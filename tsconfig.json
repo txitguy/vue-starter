@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "outDir": "./built/",
-        "sourceMap": false,
+        "sourceMap": true,
         "strict": true,
         "noImplicitReturns": true,
         "module": "es2015",
