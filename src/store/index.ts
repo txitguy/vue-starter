@@ -6,8 +6,6 @@ Vue.use(Vuex)
 
 /* eslint-disable no-new */
 export default new Vuex.Store({
-  actions,
-  modules: {
-  },
+  //actions: actions,
   strict: true
 })
