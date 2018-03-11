@@ -1,59 +1,56 @@
 import api from './api'
 
-class CRUD {
+export default class CRUD {
+  private getUrl: string = '';
+  private queryUrl: string = '';
+  private createUrl: string = '';
+  private updateUrl: string = '';
+  private destroyUrl: string = '';
+
   constructor () {
-    this.isRest = false
-    this.getUrl = ''
-    this.queryUrl = ''
-    this.createUrl = ''
-    this.updateUrl = ''
-    this.destroyUrl = ''
   }
 
-  get (idParam, params) {
-    return api.get(this.parseUrl(this.getUrl, idParam), { params }).then(res => {
+  get (idParam: string|number, params: object) {
+    return api.get(this.parseUrl(this.getUrl, idParam), params).then(res => {
       return res.data
     })
   }
 
-  query (params) {
+  query (params: object) {
     return api.get(this.queryUrl, { params }).then(res => {
       return res.data
     })
   }
 
-  create (data) {
+  create (data: object) {
     return api.post(this.createUrl, data).then(res => {
       return res.data
     })
   }
 
-  update (idParam, data) {
+  update (idParam: any, data: object) {
     return api.put(this.parseUrl(this.updateUrl, idParam), this.filterData(data)).then(res => {
       return res.data
     })
   }
 
-  destroy (data) {
+  destroy (data: object) {
     return api.delete(this.destroyUrl, {data}).then(res => {
       return res.data
     })
   }
 
   // handle url template
-  parseUrl (url, params) {
+  parseUrl (url: string, params: any) {
     for (let i in params) {
       url = url.replace(':' + i, params[i])
     }
     return url
   }
 
-  // 过滤修改参数
-  filterData (data) {
+  filterData (data: any) {
     delete data.info
     delete data.code
     return data
   }
 }
-
-export default CRUD

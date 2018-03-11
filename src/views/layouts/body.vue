@@ -18,3 +18,13 @@
     background-color: #f1f2f7;
   }
 </style>
+
+<script lang="ts">
+import Vue from 'vue'
+import Component from 'vue-class-component'
+
+@Component({})
+export default class VBody extends Vue {
+
+}
+</script>

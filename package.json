@@ -12,9 +12,11 @@
   "dependencies": {
     "axios": "^0.18.0",
     "normalize.css": "^8.0.0",
+    "nprogress": "^0.2.0",
     "vue": "^2.5.14"
   },
   "devDependencies": {
+    "@types/nprogress": "^0.0.29",
     "autoprefixer": "^8.1.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
@@ -43,7 +45,6 @@
     "function-bind": "^1.1.1",
     "html-webpack-plugin": "^3.0.6",
     "http-proxy-middleware": "^0.17.4",
-    "jade": "^1.11.0",
     "node-sass": "^4.7.2",
     "opn": "^5.2.0",
     "ora": "^2.0.0",

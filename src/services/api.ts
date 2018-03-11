@@ -1,6 +1,5 @@
 import axios from 'axios'
 import NProgress from 'nprogress'
-import { Notification } from 'element-ui'
 import config from '../config'
 import router from '../router'
 
@@ -20,15 +19,13 @@ instance.interceptors.request.use(config => {
 
 instance.interceptors.response.use(res => {
   NProgress.done()
-  // 大于300 提示
   if (res.data.code >= 300) {
-    Notification.error(res.data.info)
+    // Error logging
+    // Notification.error(res.data.info)
   }
-  // 拦截304 跳转登录界面
   if (res.data.code === 304) {
     router.push('/auth')
   }
-  // 转换分页信息
   if (res.data.page) {
     res.data.meta = {
       page: +res.data.page,
