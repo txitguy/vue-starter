@@ -1,5 +1,5 @@
 export default {
-  emptyPageOptions (params) {
+  emptyPageOptions (params: any) {
     for (var i in params) {
       params[i] = null
     }

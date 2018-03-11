@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import home from 'views/home.vue'
+
+// layouts
+import base from 'views/layouts/base.vue'
+
+// Pages
+import pageNotFound from 'views/pages/404.vue'
 import index from 'views/pages/index.vue'
 
 Vue.use(Router)
@@ -9,10 +14,13 @@ export default new Router({
   mode: 'history',
   routes: [{
     path: '/',
-    component: home,
+    component: base, // layout
     children: [{
-      path: '/home',
+      path: '/',
       component: index
+    },{
+      path: '*',
+      component: pageNotFound
     }]
   }]
 })
