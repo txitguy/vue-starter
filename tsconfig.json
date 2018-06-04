@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "outDir": "./built/",
+        "sourceMap": true,
+        "strict": true,
+        "noImplicitReturns": true,
+        "module": "es2015",
+        "moduleResolution": "node",
+        "target": "es2015",
+        "experimentalDecorators": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strictNullChecks": true,
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+
+        "baseUrl": "./",
+        "paths": {
+          "Src/*": ["src/*"],
+          "Assets/*": ["assets/*"],
+          "Components/*": ["src/components/*"],
+          "Services/*": ["src/services/*"],
+          "Pages/*": ["src/views/pages/*"],
+          "Models/*": ["src/models/*"],
+          "Utils/*": ["src/utils/*"]
+        }
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "./dist/*",
+        "./test/*"
+    ]
+}
