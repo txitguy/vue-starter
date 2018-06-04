@@ -111,9 +111,7 @@
   "config": {
     "pre-git": {
       "pre-commit": [],
-      "pre-push": [
-        "yarn run lint"
-      ],
+      "pre-push": [],
       "post-commit": [],
       "post-checkout": [
         "yarn install"
