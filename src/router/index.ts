@@ -8,6 +8,9 @@ import base from 'views/layouts/base.vue'
 import pageNotFound from 'Pages/404.vue'
 import index from 'Pages/index.vue'
 
+import accountsIndex from 'Pages/accounts/index.vue'
+import accountsList from 'Pages/accounts/list.vue'
+
 
 Vue.use(Router)
 
@@ -27,6 +30,14 @@ export default new Router({
       path: '/',
       component: index,
       name: 'home'
+    },{
+      path: '/accounts/',
+      component: accountsIndex,
+      children: [{
+        path: '/',
+        component: accountsList,
+        name: 'accounts'
+      }]
     },{
       path: '*',
       component: pageNotFound,

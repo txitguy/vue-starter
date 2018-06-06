@@ -88,19 +88,19 @@ module.exports = function(grunt) {
       dist: {
         options: { style: 'compressed', sourcemap: 'none' },
         files: {
-          'css/bracket.min.css': 'scss/bracket.scss'
-          //'css/bracket.simple-white.min.css': 'scss/skins/simple-white.scss',
-          //'css/bracket.oreo.min.css': 'scss/skins/oreo.scss',
-          //'css/bracket.dark.min.css': 'scss/skins/dark.scss'
+          'css/bracket.min.css': 'scss/bracket.scss',
+          'css/bracket.simple-white.min.css': 'scss/skins/simple-white.scss',
+          'css/bracket.oreo.min.css': 'scss/skins/oreo.scss',
+          'css/bracket.dark.min.css': 'scss/skins/dark.scss'
         }
       },
       dev: {
         options: { style: 'expanded', sourcemap: 'none' },
         files: {
-          'css/bracket.css': 'scss/bracket.scss'
-          //'css/bracket.simple-white.css': 'scss/skins/simple-white.scss',
-          //'css/bracket.oreo.css': 'scss/skins/oreo.scss',
-          //'css/bracket.dark.css': 'scss/skins/dark.scss'
+          'css/bracket.css': 'scss/bracket.scss',
+          'css/bracket.simple-white.css': 'scss/skins/simple-white.scss',
+          'css/bracket.oreo.css': 'scss/skins/oreo.scss',
+          'css/bracket.dark.css': 'scss/skins/dark.scss'
         }
       }
     },
@@ -136,5 +136,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('build', ['bower']);
+
+  grunt.registerTask('sass', ['sass']);
 
 };

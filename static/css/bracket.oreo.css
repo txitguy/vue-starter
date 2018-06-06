@@ -1,0 +1,369 @@
+/*!
+ * Bracket Plus Skin - Oreo
+ * Version: 1.1.0
+ * Author: ThemePixels (@themepixels)
+ * URL: http://themepixels.me/bracketplus
+**/
+body.oreo {
+  background-color: #e9ecef;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  /***** HEADER *****/
+  /***** SIDEBAR LEFT *****/
+  /***** SIDEBAR RIGHT *****/
+  /***** MAIN PANEL *****/
+  /********** WIDGET ***********/
+  /*****************************/
+  /********** LIB STYLES **********/
+  /********************************/
+  /***** CUSTOM STYLES *****/
+  /* ############### PROFILE PAGE ############### */
+  /* ############################################ */
+  /** SITEMAP **/
+  /********** RTL SUPPORT **********/
+  /*********************************/
+}
+body.oreo .br-header {
+  background-color: #0866C6;
+  box-shadow: none;
+}
+body.oreo .br-header::before {
+  display: none;
+}
+body.oreo .br-header-left .form-control {
+  background-color: transparent;
+  color: #fff;
+}
+body.oreo .br-header-left .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+body.oreo .br-header-left .input-group-btn {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+body.oreo .br-header-left .input-group-btn .btn {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+body.oreo .br-header-left .input-group-btn .btn:focus, body.oreo .br-header-left .input-group-btn .btn:active {
+  color: rgba(255, 255, 255, 0.7);
+}
+body.oreo .br-header-right .dropdown > a {
+  color: rgba(255, 255, 255, 0.8);
+}
+body.oreo .br-header-right .dropdown > a:hover, body.oreo .br-header-right .dropdown > a:focus {
+  color: #fff;
+}
+body.oreo .nav-link-profile {
+  color: rgba(255, 255, 255, 0.8);
+}
+body.oreo .nav-link-profile .square-10 {
+  border-color: #0866C6;
+}
+body.oreo .nav-link-profile:hover, body.oreo .nav-link-profile:focus {
+  color: #fff;
+}
+body.oreo .dropdown-menu-header::before {
+  background-color: #0866C6;
+  z-index: 1040;
+}
+body.oreo .user-profile-nav a {
+  color: #6c757d;
+}
+body.oreo .user-profile-nav .icon {
+  color: #0866C6;
+}
+body.oreo .navicon-left {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+body.oreo .navicon-left a {
+  color: rgba(255, 255, 255, 0.6);
+}
+body.oreo .navicon-left a:hover, body.oreo .navicon-left a:focus {
+  color: #fff;
+}
+body.oreo .navicon-right {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+body.oreo .navicon-right a {
+  color: rgba(255, 255, 255, 0.8);
+}
+body.oreo .navicon-right a:hover, body.oreo .navicon-right a:focus {
+  color: #fff;
+}
+body.oreo .br-sideleft {
+  background-color: #212529;
+  padding: 0;
+}
+body.oreo .br-sideleft .sidebar-label:first-child {
+  color: rgba(255, 255, 255, 0.2);
+}
+body.oreo .br-logo {
+  background-color: #0759ad;
+}
+@media (min-width: 992px) {
+  body.oreo .br-logo {
+    border-right: 0;
+  }
+}
+body.oreo .br-logo > a {
+  color: #fff;
+}
+body.oreo .br-logo > a i {
+  color: rgba(255, 255, 255, 0.5);
+}
+body.oreo .br-logo > a span {
+  color: #fff;
+}
+body.oreo .sidebar-label {
+  color: #adb5bd;
+  opacity: 1;
+  margin-bottom: 0;
+  padding: 15px 12px;
+}
+body.oreo .sidebar-label.tx-info {
+  color: #17A2B8;
+}
+body.oreo .br-sideleft-menu .br-menu-item:last-child .br-menu-link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+body.oreo .br-menu-link {
+  color: #6c757d;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 0;
+  height: 42px;
+}
+body.oreo .br-menu-link.with-sub::after {
+  top: 12px;
+  color: #495057;
+}
+body.oreo .br-menu-link:hover, body.oreo .br-menu-link:focus {
+  color: #f8f9fa;
+  background-color: #262a2f;
+}
+body.oreo .br-menu-link:focus, body.oreo .br-menu-link:active {
+  outline: none;
+}
+body.oreo .br-menu-link.show-sub {
+  color: #f8f9fa;
+  background-color: #262a2f;
+}
+body.oreo .br-menu-link.active {
+  color: #fff;
+  background-color: #0866C6;
+  background-image: linear-gradient(to right, #0866C6 0%, #0759ad 100%);
+  background-repeat: repeat-x;
+  border-top-color: transparent;
+}
+body.oreo .br-menu-link.active::after {
+  color: #fff;
+}
+body.oreo .br-menu-sub {
+  background-color: #1c2023;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 0;
+}
+body.oreo .br-menu-sub .sub-link:hover, body.oreo .br-menu-sub .sub-link:focus {
+  color: #0866C6;
+}
+body.oreo .br-menu-sub .sub-link:hover::before, body.oreo .br-menu-sub .sub-link:focus::before {
+  background-color: #0866C6;
+}
+body.oreo .br-menu-sub .sub-link.active {
+  color: #0866C6;
+}
+body.oreo .br-menu-sub .sub-link.active::before {
+  background-color: #0866C6;
+}
+body.oreo .info-list {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+body.oreo .br-sideright {
+  background-color: #212529;
+}
+body.oreo .br-sideright .sidebar-label {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 10px;
+}
+body.oreo .br-sideright .switch-button-background {
+  background-color: #16181b;
+}
+body.oreo .br-sideright .switch-button-background.checked {
+  background-color: #17A2B8;
+}
+body.oreo .br-sideright .switch-button-label.on {
+  color: #17A2B8;
+}
+body.oreo .sidebar-tabs {
+  background-color: #1a1d21;
+}
+body.oreo .sidebar-tabs .nav-link {
+  color: #6c757d;
+}
+body.oreo .sidebar-tabs .nav-link.active {
+  background-color: #212529;
+  color: #0866C6;
+}
+body.oreo .contact-list-link.new {
+  background-color: #1c2023;
+}
+body.oreo .contact-list-link:hover, body.oreo .contact-list-link:focus {
+  background-color: #1c2023;
+}
+body.oreo .contact-list-link:hover.new, body.oreo .contact-list-link:focus.new {
+  background-color: #1a1d21;
+}
+body.oreo .contact-status-indicator {
+  border-color: #212529;
+}
+body.oreo .media-file-list {
+  margin-top: 5px;
+  padding-left: 0;
+  padding-right: 0;
+}
+body.oreo .media-file-list .media {
+  padding: 10px 25px;
+  margin-top: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+body.oreo .sidebar-datepicker .ui-datepicker-calendar thead th {
+  color: #0866C6;
+}
+body.oreo .sidebar-datepicker .ui-datepicker-calendar .ui-datepicker-today .ui-state-default {
+  background-color: transparent;
+  color: #0866C6;
+  border-color: #0866C6;
+}
+body.oreo .sidebar-settings-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+body.oreo .sidebar-settings-item .form-control {
+  background-color: #16181b;
+}
+body.oreo .br-pageheader {
+  background-color: #dee2e6;
+  padding: 14px 20px;
+}
+body.oreo .br-pagetitle {
+  padding: 20px 25px;
+  background-color: #fff;
+  border-bottom: 1px solid #ced4da;
+}
+body.oreo .br-pagetitle .icon {
+  color: #0866C6;
+}
+body.oreo .br-pagetitle h4 {
+  color: #0866C6;
+}
+body.oreo .br-section-wrapper {
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+@media (min-width: 992px) {
+  body.oreo .collapsed-menu .br-menu-link .menu-item-icon {
+    transform: translateX(9px);
+  }
+}
+@media (min-width: 992px) {
+  body.oreo .expand-menu .br-menu-link .menu-item-icon {
+    transform: translateX(0);
+  }
+}
+body.oreo .br-subleft {
+  background-color: #2c3237;
+}
+body.oreo .br-nav-mailbox .nav-link:hover, body.oreo .br-nav-mailbox .nav-link:focus {
+  background-color: #282d31;
+  color: #fff;
+}
+body.oreo .br-nav-mailbox .nav-link.active {
+  background-color: #212529;
+  color: #fff;
+}
+body.oreo .br-nav-mailbox .nav-link + .nav-link {
+  margin-top: 1px;
+}
+body.oreo .br-mailbox-list-item.active::before, body.oreo .br-mailbox-list-item.active:hover::before, body.oreo .br-mailbox-list-item.active:focus::before {
+  background-color: #0866C6;
+}
+body.oreo .br-mailbox-list-item + .br-mailbox-list-item {
+  border-top: 1px solid #dee2e6;
+}
+body.oreo .br-msg-body {
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+body.oreo .widget-1,
+body.oreo .widget-2,
+body.oreo .widget-3 {
+  border: 1px solid #ced4da;
+}
+body.oreo .widget-2 {
+  border-radius: 3px;
+}
+body.oreo .widget-3 {
+  box-shadow: none;
+}
+body.oreo .wizard > .steps .current a, body.oreo .wizard > .steps .current a:hover, body.oreo .wizard > .steps .current a:active {
+  background-color: #0866C6;
+}
+body.oreo .wizard > .actions a,
+body.oreo .wizard > .actions a:hover,
+body.oreo .wizard > .actions a:active {
+  background-color: #0866C6;
+}
+body.oreo .wizard-style-1 > .steps > ul .current a .number, body.oreo .wizard-style-1 > .steps > ul .current a:hover .number, body.oreo .wizard-style-1 > .steps > ul .current a:active .number {
+  background-color: #0759ad;
+}
+body.oreo .wizard-style-2 > .steps > ul .current a .number, body.oreo .wizard-style-2 > .steps > ul .current a:hover .number, body.oreo .wizard-style-2 > .steps > ul .current a:active .number {
+  border-color: #0866C6;
+  color: #0866C6;
+}
+body.oreo .wizard-style-3 > .steps > ul .current a, body.oreo .wizard-style-3 > .steps > ul .current a:hover, body.oreo .wizard-style-3 > .steps > ul .current a:active {
+  color: #0866C6;
+}
+body.oreo .wizard-style-3 > .steps > ul .current a .number, body.oreo .wizard-style-3 > .steps > ul .current a:hover .number, body.oreo .wizard-style-3 > .steps > ul .current a:active .number {
+  background-color: #0866C6;
+}
+body.oreo .br-profile-page .card-header {
+  background-color: #495057;
+}
+body.oreo .br-profile-page .card-body {
+  background-color: #343a40;
+}
+body.oreo .br-sitemap-section a {
+  color: #343a40;
+}
+body.oreo .br-sitemap-section a:hover, body.oreo .br-sitemap-section a:focus {
+  color: #0866C6;
+}
+body.oreo .br-sitemap-section ol > li a {
+  color: #0866C6;
+}
+body.oreo .br-sitemap-section ol > li a:hover, body.oreo .br-sitemap-section ol > li a:focus {
+  color: #0759ad;
+}
+body.oreo .br-sitemap-section ul li::before {
+  background-color: #0866C6;
+}
+body.oreo .rtl .sidebar-tabs .nav-link {
+  width: 100%;
+  text-align: center;
+}
+body.oreo .rtl .br-header-left .input-group-btn {
+  border-left-color: rgba(255, 255, 255, 0.3);
+}
+body.oreo .rtl .navicon-left {
+  border-left-color: rgba(255, 255, 255, 0.3);
+}
+body.oreo .rtl .navicon-right {
+  border-right-color: rgba(255, 255, 255, 0.3);
+}
+@media (min-width: 992px) {
+  body.oreo .rtl .br-logo {
+    border-left-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/*# sourceMappingURL=oreo.css.map */
